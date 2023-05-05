@@ -1,0 +1,115 @@
+:root{
+    --white-500:#fff;
+    --black-500:#000;
+    --red-300:hsl(10, 79%, 65%);
+    --cyan-500:hsl(186, 34%, 60%);
+    --brown-700:hsl(25, 47%, 15%);
+    --brown-300:hsl(28, 10%, 53%);
+    --Cream-500:hsl(27, 66%, 92%);
+    --orange-100:hsl(33, 100%, 98%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 18px;
+
+    background-color: var(--Cream-500);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 18px;
+
+    height: 100vh;
+}
+.header{
+    background-color: var(--red-300);
+    color: var(--white-500);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 375px;
+    height: 100px;
+    border-radius: 10px;
+
+    padding: 0 25px;
+}
+.myBalance h5{
+    margin-bottom: 2px;
+
+    font-weight: normal;
+}
+.main{
+    width: 375px;
+    border-radius: 10px;
+
+    background-color: var(--orange-100);
+
+    padding: 25px 20px;
+}
+.main h2{
+    font-size: 26px;
+}
+.graphic{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    height: 240px;
+}
+.bar{
+    background-color: var(--red-300);
+
+    width: 38px;
+    height: 163px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .3s;
+}
+.bar:hover{
+    opacity: .75;
+}
+.mon{
+    
+}
+.day{
+    display: block;
+
+    text-align: center;
+    font-size: 14px;
+
+    margin-top: 11px;
+}
+.horizontalRow{
+    height: 2px;
+
+    margin: 25px 0;
+
+    background-color: var(--Cream-500);
+}
+.monthInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.subtitles{
+    font-size: 15px;
+}
+.monthTotal h2{
+    margin-top: 7px;
+}
+.monthGrowth{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
